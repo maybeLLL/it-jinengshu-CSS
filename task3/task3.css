@@ -1,0 +1,16 @@
+body{
+	background:	#33FFFF
+	margin:0px;
+	font-family:"微软雅黑",Verdana,Helvetica,"Dorid sans",sans-serif;
+	color:withe;
+	}
+.title,.website,.content{
+	margin:0 auto;
+	padding:0;
+	}
+.qq{
+	float:left;
+	}
+.logo2{
+	float:right;
+	}
