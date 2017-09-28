@@ -6,7 +6,7 @@ body{
 	color:white;
 	}
 .header{
-	width:203px;
+	width:150px;
 	margin:0 auto;
 	padding:5% 0;
 	}
@@ -14,16 +14,17 @@ body{
 	margin:0 auto;
 	padding:10% 0;
 	font-size:1.2rem;
-	max-width:60%;
+	max-width:75%;
 }
 .footer{
-	max-width:65%;;
+	max-width:80%;;
 	margin:0 auto;
 	padding:20% 0 30% 0;
+	font-size:1.2rem;
 	}
 .backspace{
-	margin-left:1%;
-	margin-top:1%;
+	margin-left:3%;
+	margin-top:3%;
 }
 .left{
 	float:left;
