@@ -1,3 +1,4 @@
+
 body{
 	background:	#68cdd5;
 	margin:0px;
@@ -8,23 +9,26 @@ body{
 .header{
 	width:150px;
 	margin:0 auto;
-	padding:5% 0;
+	padding:2rem 0;
 	}
 .content{
-	margin:0 auto;
-	padding:10% 0;
-	font-size:1.2rem;
-	max-width:75%;
+	margin:2rem auto 0 auto;
+	padding:0 2rem 0 2rem;
+	font-size:0.8rem;
+	max-width:35rem;
+	box-sizing:padding-box;
 }
 .footer{
-	max-width:80%;
-	margin:0 auto;
-	padding:20% 0 30% 0;
-	font-size:1.2rem;
+	max-width:35rem;
+	margin:6rem auto 0 auto;
+	padding:10rem 0 0 0;
+	font-size:0.8rem;
+	box-sizing:padding-box;
+	padding:0 2rem 0 2rem;
 	}
 .backspace{
-	margin-left:3%;
-	margin-top:3%;
+	margin-left:1rem;
+	margin-top:1rem;
 }
 .left{
 	float:left;
