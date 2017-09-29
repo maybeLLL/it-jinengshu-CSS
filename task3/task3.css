@@ -1,34 +1,40 @@
 
-body{
+html{
 	background:	#68cdd5;
 	margin:0px;
 	font-family:"微软雅黑",Verdana,Helvetica,"Dorid sans",sans-serif;
-	font-size:20px;
+	font-size:16px;
 	color:white;
 	}
+
+@media only screen and (min-height:667px)
+{html 
+{font-size:25px;}
+}
+@media only screen and (min-height:1005px)
+{html 
+{font-size:40px;}
+}
 .header{
 	width:150px;
 	margin:0 auto;
-	padding:2rem 0;
+	padding:1.5rem 0;
 	}
 .content{
-	margin:2rem auto 0 auto;
+	margin:3rem auto 0 auto;
 	padding:0 2rem 0 2rem;
 	font-size:0.8rem;
 	max-width:35rem;
-	box-sizing:padding-box;
 }
 .footer{
 	max-width:35rem;
-	margin:6rem auto 0 auto;
-	padding:10rem 0 0 0;
+	margin:7rem auto 0 auto;
 	font-size:0.8rem;
-	box-sizing:padding-box;
 	padding:0 2rem 0 2rem;
 	}
 .backspace{
-	margin-left:1rem;
-	margin-top:1rem;
+	margin-left:0.5rem;
+	margin-top:0.5rem;
 }
 .left{
 	float:left;
