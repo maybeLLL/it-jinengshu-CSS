@@ -6,15 +6,6 @@ html{
 	font-size:16px;
 	color:white;
 	}
-
-@media only screen and (min-height:667px)
-{html 
-{font-size:25px;}
-}
-@media only screen and (min-height:1005px)
-{html 
-{font-size:40px;}
-}
 .header{
 	width:150px;
 	margin:0 auto;
@@ -25,6 +16,7 @@ html{
 	padding:0 2rem 0 2rem;
 	font-size:0.8rem;
 	max-width:35rem;
+	line-height:1.5rem;
 }
 .footer{
 	max-width:35rem;
