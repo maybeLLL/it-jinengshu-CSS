@@ -20,9 +20,13 @@ html{
 }
 .footer{
 	max-width:35rem;
-	margin:7rem auto 0 auto;
+	margin: 0 auto;
 	font-size:0.8rem;
 	padding:0 2rem 0 2rem;
+	position:absolute;
+	bottom:20%;
+	left:0;
+	right:0;
 	}
 .backspace{
 	margin-left:0.5rem;
