@@ -1,40 +1,38 @@
-html{
+html,body{
 	font-size:16px;	
 	font-family:serif;
 	font-weight:bold;
 	color:white;
+	margin:0;
 	height:100%;
 	}
-body{
-	height:100%;
-	margin:0;
-}
 header{
-	width:100%;
 	height:3rem;
-	position:fixed;	
+	position:fixed;
 	top:0;
 	left:0;
+	right:0;
 	background:#5fc0cd;
+	padding:0 3rem;
 	}
-.login{
+.login,.register,.close{
 	float:left;
-	margin-left:1rem;
-}
-.close{
-	float:right;
-	margin-right:1rem;
-}
-.close,.login{
-	font-size:1rem;
 	line-height:3rem;
 }
 .register{
-	line-height:3rem;
-	font-size:1.125rem;
-	text-align:center;
-	margin:0 4rem;
+	font-size:1.12rem;
+	width:100%;
+	text-align:center;	
 }
-
-	
-	
+.login{
+	width:3rem;
+	margin-left:-100%;
+	position:relative;
+	left:-2rem;
+}
+.close{
+	width:3rem;
+	margin-left:-3rem;
+	position:relative;
+	right:-3rem;
+}
