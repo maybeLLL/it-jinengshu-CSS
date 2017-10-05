@@ -1,13 +1,23 @@
-html,body{
+html{
 	font-size:16px;	
 	font-family:serif;
 	font-weight:bold;
 	color:white;
-	margin:0;
-	height:100%;
+	background:#eff0f4;
 	}
-header{
+body{
+	padding-top:3.5rem;
+	height:100%;
+	margin:0;
+}
+header,.register2{
 	height:3rem;
+	font-size:1.12rem;
+	background:#5fc0cd;
+	line-height:3rem;
+	text-align:center;
+}
+header{
 	position:fixed;
 	top:0;
 	left:0;
@@ -16,23 +26,50 @@ header{
 	padding:0 3rem;
 	}
 .login,.register,.close{
-	float:left;
-	line-height:3rem;
+float:left;
 }
 .register{
-	font-size:1.12rem;
 	width:100%;
-	text-align:center;	
 }
 .login{
 	width:3rem;
 	margin-left:-100%;
 	position:relative;
-	left:-2rem;
+	left:-3rem;
+	font-size:0.9rem;
 }
 .close{
 	width:3rem;
 	margin-left:-3rem;
 	position:relative;
 	right:-3rem;
+	font-size:0.9rem;
 }
+input{
+	float:left;
+	width:100%;
+	height:3rem;
+	outline:none;
+	border:0;
+	margin-bottom:0.5rem;
+	box-sizing:border-box;
+	padding-left:4rem;
+}
+.iphonepic,.locked{
+	height:1rem;
+	float:left;
+	margin-left:-100%;
+	box-sizing:border-box;
+	padding:0 1rem;
+	margin-top:1rem;
+	margin-bottom:1rem;
+	border-right:1px solid #e0e0e0;
+}
+a{
+	float:right;
+	font-size:0.75rem;
+	margin:0.5rem;
+	color:#5fc0cd;
+}
+.clear{clear:both;}
+
