@@ -75,6 +75,7 @@ input{
 	font-size:0.75rem;
 	margin:0.5rem;
 	color:#5fc0cd;
+	text-decoration:underline;
 }
 .clear{clear:both;}
 
