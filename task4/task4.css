@@ -23,27 +23,21 @@ header{
 	left:0;
 	right:0;
 	background:#5fc0cd;
-	padding:0 3rem;
 	}
-.login,.register,.close{
-float:left;
-}
 .register{
-	width:100%;
+	margin:0 4rem;
 }
 .login{
 	width:3rem;
-	margin-left:-100%;
-	position:relative;
-	left:-3rem;
+	float:left;
 	font-size:0.9rem;
+	margin-left:1rem;
 }
 .close{
 	width:3rem;
-	margin-left:-3rem;
-	position:relative;
-	right:-3rem;
+	float:right;
 	font-size:0.9rem;
+	margin-right:1rem;
 }
 input{
 	float:left;
