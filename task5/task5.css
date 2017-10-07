@@ -135,6 +135,7 @@ img{
 }
 
 footer{
+	background:white;
 	position:fixed;
 	bottom:0;
 	width:100%;
@@ -143,19 +144,30 @@ footer{
 .message{
 	position:absolute;
 	left:3.3%;
-	height:10%;
+	top:10%;
+	border-radius:3%;
+	border:2px solid #5fc0cd;
+	background:white;
+	color:#5fc0cd
 }
 .tel{
 	position:absolute;
 	right:3.3%;
-	height:10%;
-	
-}
-.message,.tel{
-	width:30%;
+	top:10%;
+	border:2px solid #5fc0cd;
+	background:#5fc0cd;
+	color:white;
+	}
+button{
 	height:80%;
-	text-align:center;
+	width:45%;
 }
+.message a{
+	color:#5fc0cd}
+.tel a{
+	color:white;}
+a{
+	text-decoration:none;}
 
 
 	
