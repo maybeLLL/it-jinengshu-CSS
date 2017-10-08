@@ -1,31 +1,29 @@
-html{
+html {
 	height:100%;
 	font-size:16px;
 	color:white;
 }
-body{
+body {
 	margin:0;
 	height:100%;
-	padding:3rem 0 3.2rem 0;
-	overflow:auto;
 }
-
-header{
-	background:#5fc0cd;
+/*以下是头部，position:fixed;紧贴页面上部 高度未使用百分比主要为了
+和body的padding-top的值相同，这样下方部分不用设置absolute来
+进行定位，滚轮滚到最上方也不会被header部分挡住*/
+header {
 	position:fixed;
 	top:0;
 	width:100%;
-	height:8%;
+	height:3rem;
 	z-index:1;
+	background:#5fc0cd;
 	}
+/*标题 个人主页 水平 垂直居中*/
 .title{
-	font-size:1rem;
-	position:absolute;
-	left:50%;
-	top:50%;
-	margin-left:-2.3rem;
-	margin-top:-0.6rem;
+	text-align:center;
+	line-height:3rem;
 	}
+/*画左箭头*/
 .arrow1,.arrow2{
 	width:0;
 	height:0;
@@ -42,96 +40,84 @@ header{
 	left:12px;
 	border-right:20px #5fc0cd solid;
 }
+/*以下是大背景图部分 其中的内容位置固定不随浏览器宽度高度变化
+所以未使用百分比的值*/
 .picture{
-	position:absolute;
-	top:8%;
-	width:100%;
+	position:relative;
 	height:30%;
-	background:url(background1.png) no-repeat 100%;
-	background-size:100% 100%;
+	margin-top:3rem;/*避免header的遮挡*/
+	background:url(background1.png) no-repeat ;
+	background-size:cover;
 }
 .name{
-	font-size:0.75rem;
+	font-size:0.9rem;
 	position:absolute;
-	left:8rem;
+	left:6rem;
 	top:50%;
-	margin:0;
 	margin-top:-1.2rem;
 }
 .name p{
 	margin:0;
-	line-height:1.5rem;
 }
 img{
-	vertical-align:middle;
+	vertical-align:middle;/*图片水平居中文字*/
 	padding-right:0.2rem;
 }
-.photo{
+.profilepic {
 	width:4rem;
-	height:5rem;
+	height:4rem;
 	position:absolute;
-	left:2rem;
-	top:50%;
-	margin-top:-2.5rem;
-	border:1px solid transparent;
-	border-radius:50%;
-	background:url(background2.png) no-repeat 100% 100%;
-	background-size:100% 100%;
+	left:1rem;
+	top:0;
+	bottom:0;
+	margin:auto 0;
 }
+/*以下是护工个人信息*/
 .content{
 	font-size:0.75rem;
 	color:black;
-	position:absolute;
-	top:38%;
-	width:100%;
+	position:relative;
+	margin-bottom:3.5rem;/*避免footer的遮挡，之前给body设置
+	padding-bottom如果底部那一栏输入了特别多的字，底部还是会被挡住，
+	因为滚轮拉上去以后发现body没有包裹住整个内部的内容*/
 }
 .line{
 	position:relative;
-	margin:0;
-	height:3rem;
-	box-sizing:border-box;
 	padding-left:1rem;
 	border-bottom:1px solid #e1e5e7;
 }
-.C{
-	margin:0;
-	position:absolute;
-	top:50%;
-	margin-top:-0.5rem;
-	padding-left:0.5rem;
-}
 .A{
+	line-height:3rem;
 	margin:0;
-	position:absolute;
-	top:50%;
-	margin-top:-0.5rem;
 	padding-left:0.5rem;
 	border-left:3px solid #5fc0cd;
 }
-.B,.D{
-	display:inline-block;
+.C{
+	padding-left:0.5rem;
+	line-height:3rem;
 }
 .B{
 	color:#aaaaaa;
-	margin:0;
-	position:absolute;
-	top:50%;
-	margin-top:-0.5rem;
 	padding:0 0.5rem;
 	border-right:1px solid #aaaaaa;
+	line-height:3rem;
 }
 .D{
-	margin:0;
-	padding:1rem 0 1rem 4.5rem;
+	margin-left:0.5rem;
+	line-height:3rem;
 	}
-.line1{
-	position:relative;
-	margin:0;
-	box-sizing:border-box;
-	padding-left:1rem;
-	border-bottom:1px solid #e1e5e7;
+.B1 {
+	position:absolute;
+	top:50%;
+	margin-top:-1rem;
+	padding:0 0.5rem;
+	border-right:1px solid #aaaaaa;
+	color:#aaaaaa;
 }
-
+.D1 {
+	margin:1rem 1rem 1rem 4.5rem;
+}
+/*以下是紧贴页面底部的部分，包含两个按钮.message和.tel */
 footer{
 	background:white;
 	position:fixed;
