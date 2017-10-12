@@ -44,8 +44,10 @@ a.col-xs-2{
 .row:nth-child(3){
 				  padding-left:1rem;				  
 }
-.row:nth-child(3) .col-xs-4{
-		  background: url(inside3.png) no-repeat right;
+.row:nth-child(3) .col-xs-3{
+		                    padding-left: 0;
+		                    background: url(inside3.png) no-repeat right;
+							color: red;
 }
 .col-xs-11{
 	       margin-top: 1rem;
