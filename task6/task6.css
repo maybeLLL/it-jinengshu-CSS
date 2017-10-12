@@ -16,6 +16,8 @@ header{
 .btn{
 	 padding: 0.3rem 0.6rem;
 	 margin-top: 0.6rem;
+	 color: #5fc0cd;
+	 font-weight:bold;
 }
 .btn:nth-child(2){
 	              margin-left:-1rem;
@@ -23,6 +25,7 @@ header{
 .btn:focus{
 		   background:#55a8b3;
 		   outline:none;
+		   color: white;
 }
 a.col-xs-2{
 		   margin-top: 0.7rem;
