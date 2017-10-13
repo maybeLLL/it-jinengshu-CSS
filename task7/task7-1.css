@@ -1,0 +1,93 @@
+body{
+	 margin-top: 4rem;
+     background: #f0f0f0;
+}
+header{
+	   position:fixed;
+	   top: 0;
+	   left: 0;
+	   width: 100%;
+	   height: 4rem;
+	   background: #29bde0;
+}
+header .icon{
+			 margin-top: 1.25rem;
+			 margin-left: 1rem;
+			 height: 1.5rem;
+			 width: 1.5rem;
+			 border-top: 0.2rem solid white;
+			 border-bottom: 0.2rem solid white;
+}
+.icon .line{
+			width: 1.5rem;
+			padding-top: 30%;
+			border-bottom: 0.2rem solid white;
+}
+
+.container{
+		   
+
+}
+.pre-game{
+		  margin: 2rem 0;
+		  padding-top: 3rem;
+		  padding-bottom: 3rem;
+		  border: 0.1px solid #c9c9c9;
+		  color: #9a9a9a;
+		  font-size: 1.8rem;
+		  background: white url(arc.png) no-repeat 95% 50%;
+}
+.pre-game span{
+			   text-align: center;
+}
+.game{
+	  margin: 0;
+	  padding-top: 3rem;
+	  padding-bottom: 3rem;
+	  border: 0.1px solid #c9c9c9;
+	  border-bottom: 1px solid #fde1ad;
+	  font-size: 1.8rem;
+	  text-align: center;
+	  color: #fbb435;
+	  background: white;
+}
+.edition{
+		 margin: 0;
+	     padding-top: 3rem;
+	     padding-bottom: 3rem;	
+		 background: white;
+		 text-align: center;
+		 border: 0.1px solid #c9c9c9;
+}
+.edition a{
+		   padding-top: 2rem;
+		   padding-bottom: 2rem;
+		   margin-bottom: 1rem;
+		   margin-top: 1rem;
+		   background: #69d1e9;
+           text-decoration: none;
+		   color: white;
+}
+a.moregame{
+		   padding-top: 1rem;
+		   padding-bottom: 1rem;
+		   padding-left: 0.5rem;
+		   background: white;
+}
+.edition span{
+			  color: #9a9a9a;
+}
+.bottom-circle{
+			   margin-top: 1rem;
+}
+.bottom-circle a{
+		         display: inline-block;
+	           	 margin: 0 0.2rem;
+				 padding: 0.5rem;
+		         border-radius: 50%;
+		         background: #f0f0f0;
+}
+.bottom-circle a:hover{
+					   background: #69d1e9;
+}
+
