@@ -1,5 +1,5 @@
 body{
-	 margin-top: 4rem;
+	 
 	 margin-bottom: 7rem;
 }
 .container-fluid{
@@ -30,22 +30,57 @@ header{
 a.col-xs-2{
 		   margin-top: 0.7rem;
 }
-.row:nth-child(2){
-		          border-bottom: 1px solid #e1e5e7;
+.drop{
+	  position:fixed;
+	  top: 4rem;
+	  left: 0;
+      border-bottom: 1px solid #e1e5e7;
+      list-style: none;
+      padding: 0;
+	  margin: 0;
+	  width:100%;
+      text-align: center;
+	  background: white;
+	  z-index:999;
 }
-.row:nth-child(2) select{
-	                     padding: 0;
-	                     padding-left:10%;
-	                     margin: 1rem 0;
-	                     border: none;
-	                     border-right: 1px solid #e1e5e7;
-	                     font-size: 1.2rem;
-	                     color: #999;
-	                     text-align:center;
-	                     outline: none;
+.col-xs-4{
+             margin: 0.5rem 0;
+			 padding: 0;
+             border-right:1px solid #e1e5e7;
+			 color: #999;
+			 background: url(arc.png) no-repeat 95% 50%;
+}
+.drop-content{
+			  position: absolute;
+			  top: 0;
+			  display: none;
+			  width: 100%;
+			  padding: 0;
+			  list-style: none;
+			  text-align:center;
+			  background: #999;
+			  border-radius: 1rem;
+}
+.drop-content li{
+				 padding-top:0.5rem;
+				 padding-bottom: 0.5rem;
+				 border-bottom: 1px solid white;				 
+}
+.drop-content li:first-child{
+							 background: url(arc.png) no-repeat 95% 50%;
+}
+.drop-content a{
+				outline: none;
+				text-decoration: none;
+				color: white;
+}
+.col-xs-4:hover .drop-content{
+					           outline: none;
+				               display: block;							   
 }
 .row:nth-child(3){
-				  padding-left:1rem;				  
+				  padding-left:1rem;
+                  margin-top: 7rem;				  
 }
 .row:nth-child(3) .col-xs-3{
 		                    padding-left: 0;
