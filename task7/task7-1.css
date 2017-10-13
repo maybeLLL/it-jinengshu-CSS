@@ -1,5 +1,6 @@
 body{
 	 margin-top: 4rem;
+	 margin-bottom:1rem;
      background: #f0f0f0;
 }
 header{
@@ -23,15 +24,10 @@ header .icon{
 			padding-top: 30%;
 			border-bottom: 0.2rem solid white;
 }
-
-.container{
-		   
-
-}
 .pre-game{
-		  margin: 2rem 0;
-		  padding-top: 3rem;
-		  padding-bottom: 3rem;
+		  margin: 1.5rem 0;
+		  padding-top: 2rem;
+		  padding-bottom: 2rem;
 		  border: 0.1px solid #c9c9c9;
 		  color: #9a9a9a;
 		  font-size: 1.8rem;
@@ -42,8 +38,8 @@ header .icon{
 }
 .game{
 	  margin: 0;
-	  padding-top: 3rem;
-	  padding-bottom: 3rem;
+	  padding-top: 1rem;
+	  padding-bottom: 1rem;
 	  border: 0.1px solid #c9c9c9;
 	  border-bottom: 1px solid #fde1ad;
 	  font-size: 1.8rem;
@@ -53,8 +49,7 @@ header .icon{
 }
 .edition{
 		 margin: 0;
-	     padding-top: 3rem;
-	     padding-bottom: 3rem;	
+	     padding-top: 1rem;
 		 background: white;
 		 text-align: center;
 		 border: 0.1px solid #c9c9c9;
@@ -62,14 +57,14 @@ header .icon{
 .edition a{
 		   padding-top: 2rem;
 		   padding-bottom: 2rem;
-		   margin-bottom: 1rem;
-		   margin-top: 1rem;
+		   margin-bottom: 0.5rem;
+		   margin-top: 0.5rem;
 		   background: #69d1e9;
            text-decoration: none;
 		   color: white;
 }
 a.moregame{
-		   padding-top: 1rem;
+		   padding-top: 1.5rem;
 		   padding-bottom: 1rem;
 		   padding-left: 0.5rem;
 		   background: white;
