@@ -126,7 +126,7 @@ header{
 .icon-X{
 		margin-right: 1rem;
 }
-.container-fluid{		
+.main{		
 				padding: 0;
 				background: #29bde0;
 }
@@ -136,7 +136,11 @@ header{
 	  align-items: center;
 	  padding-top: 1rem;
 	  padding-bottom: 1rem;
+	  margin: 0;
 	  background: #b9e9f5;
+}
+.head{
+	  margin: 0;
 }
 .small-arc{
 			width: 0;
