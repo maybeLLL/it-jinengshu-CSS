@@ -25,16 +25,22 @@ header{
 			border-bottom: 0.2rem solid white;
 }
 .pre-game{
+		  display: flex;
+		  align-items: center;
 		  margin: 1.5rem 0;
 		  padding-top: 2rem;
 		  padding-bottom: 2rem;
 		  border: 0.1px solid #c9c9c9;
 		  color: #9a9a9a;
 		  font-size: 1.8rem;
-		  background: white url(arc.png) no-repeat 95% 50%;
+		  background: white;
 }
 .lastgame{
 			   text-align: center;
+			   font-size: 1.6rem;
+}
+.lastgame-pic{
+				padding: 0;
 }
 .game{
 	  margin: 0;
