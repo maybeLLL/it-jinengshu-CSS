@@ -21,13 +21,16 @@
 	
 	<section class="container-fluid main">
 	  <div class="row voice">
-	    <span class="voice-text col-xs-12">发言讨论结束，大家请投票</span>	    
+	    <span class="voice-text col-xs-10">发言讨论结束，大家请投票</span>
+	    <audio src="strangers.mp3" controls="controls" preload id="music" hidden>
+        </audio>
+        <a class="audio-voice" id="a" onclick="a();"><img src="voice-arc.png"></a>
 	  </div>
 	  <div class="row head">
 	    <div class="small-arc col-xs-11 col-xs-offset-1"></div>
 	    <span class="click col-xs-11 col-xs-offset-1">点击得票数最多人的头像</span>
 	  </div>
-	  <div class="row head-picture">
+	  <div class="head-picture">
 	    <div class="col-xs-3  allsquare">
 		  <div class="square">
 		    <div class="name">水民</div>
@@ -65,7 +68,7 @@
 		  </div>
 		</div>
 	  </div>
-	  <div class="row head-picture">
+	  <div class="head-picture">
 	    <div class="col-xs-3  allsquare">
 		  <div class="square">
 		    <div class="name">水民</div>
@@ -103,7 +106,7 @@
 		  </div>
 		</div>
 	  </div>
-	  <div class="row head-picture">
+	  <div class="head-picture">
 	    <div class="col-xs-3  allsquare">
 		  <div class="square">
 		    <div class="name">水民</div>
@@ -141,7 +144,7 @@
 		  </div>
 		</div>
 	  </div>
-	  <div class="row head-picture">
+	  <div class="head-picture">
 	    <div class="col-xs-3  allsquare">
 		  <div class="square">
 		    <div class="name">水民</div>
@@ -184,5 +187,16 @@
 	<footer>
 	  <a href="#" class="submit">投死</a>
 	</footer>
+	<script>   
+     function a(){
+       var audio = document.getElementById('music'); 
+       if(audio.paused){                 
+           audio.play();//audio.play();// 播放  
+       }
+       else{
+            audio.pause();// 暂停
+       } 
+     }
+    </script>
   </body>
   

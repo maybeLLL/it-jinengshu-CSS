@@ -47,6 +47,9 @@ header{
 	 margin: 0;
 }
 .voice{
+	  display: flex;
+	  justify-content: space-around;
+	  align-items: center;
 	  padding-top: 1rem;
 	  padding-bottom: 1rem;
 	  background: #b9e9f5;
@@ -67,7 +70,7 @@ header{
 			 display: flex;
 			 flex-flow: row wrap;
 			 margin:  0;
-			 margin-bottom: 6.166vw;
+			 margin-bottom: 8.3333vw;
              justify-content: space-around;
 }
 .allsquare{
@@ -79,7 +82,7 @@ header{
 		display: flex;
 		flex-flow: column wrap;
 		width: 100%;
-		height: 25vw;
+		height: 24.9999vw;
 		border: 3px solid white;
 }
 .name,
@@ -89,12 +92,16 @@ header{
 	 align-items: center;
 }
 .name{
-	  flex-grow:5;
+	  flex-grow:20;
 	  background: #f5c97b;
+	  font-size: 1.8rem;
 }
 .num{
 	 flex-grow:1;
 	 background: #83b09a;
+	 font-size: 1.2rem;
+	 color: white;
+	 font-weight: 700;
 }
 .vote{
 	 display: none;
@@ -102,11 +109,11 @@ header{
 .allsquare:hover .vote{
 	  display: flex;
 	  position: absolute;
-	  bottom: -5.166vw;
+	  bottom: -6.25vw;
 	  justify-content: space-between;
 	  padding: 0;
+	  padding-top: 2.2vw;
 	  margin: 0;
-	  z-index:999;
 }
 .vote-pic{
 	  display: flex;
@@ -126,6 +133,15 @@ a:visited{
 		  color: white;
 		  text-decoration: none;
 }
+.audio-voice{
+             display: flex;
+		     width: 3rem;
+		     height: 3rem;
+		     justify-content: center;
+		     align-items: center;
+		     border-radius: 50%;
+		     background: orange;
+}			 
 footer{
 		display:flex;
 		justify-content: space-around;
