@@ -11,7 +11,7 @@ header{
 	   height: 4rem;
 	   background: #29bde0;
 }
-header .icon{
+.icon-line{
 			 margin-top: 1.25rem;
 			 margin-left: 1rem;
 			 height: 1.5rem;
@@ -19,7 +19,7 @@ header .icon{
 			 border-top: 0.2rem solid white;
 			 border-bottom: 0.2rem solid white;
 }
-.icon .line{
+.line1{
 			width: 1.5rem;
 			padding-top: 30%;
 			border-bottom: 0.2rem solid white;
@@ -33,7 +33,7 @@ header .icon{
 		  font-size: 1.8rem;
 		  background: white url(arc.png) no-repeat 95% 50%;
 }
-.pre-game span{
+.lastgame{
 			   text-align: center;
 }
 .game{
@@ -69,7 +69,7 @@ a.moregame{
 		   padding-left: 0.5rem;
 		   background: white;
 }
-.edition span{
+.number{
 			  color: #9a9a9a;
 }
 .bottom-circle{
@@ -82,7 +82,7 @@ a.moregame{
 		         border-radius: 50%;
 		         background: #f0f0f0;
 }
-.bottom-circle a:hover{
+.bottom-circle .circle:hover{
 					   background: #69d1e9;
 }
 

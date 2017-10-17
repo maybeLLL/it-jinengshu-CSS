@@ -1,4 +1,4 @@
-body{
+.task7-3{
 	 margin: 0;
 	 margin-top: 4rem;
 	 margin-bottom: 7rem;
@@ -39,9 +39,10 @@ header{
 .name{
 	  padding: 0;
 }
-.row{
-	margin: 0;
-	padding: 0 3rem;
+.result,
+.process{
+	     margin: 0;
+	     padding: 0 3rem;
 }
 .result{
 		padding-bottom: 1rem;
@@ -52,16 +53,27 @@ header{
 			padding-top: 3rem;
 }
 .result-content{
+			    display: flex;
+				justify-content: center;
 				padding-top: 1rem;
 				padding-bottom: 3rem;
 				font-size: 1.8rem;
 				color: #ffc865;
 }
-
+.sum-time,
+.sum-result,
+.name{
+      display: flex;
+	  justify-content: flex-start;	
+}
+.time{
+	  text-align: right;
+}
 .process{
 		 padding: 0;
 		 color: #bcbcbc;
 		 font-size: 1.4rem;
+		 background: white;
 }
 .date-time{
 		  padding: 0.6rem 3rem 1rem 3rem;
@@ -73,7 +85,7 @@ header{
 .time{
 	  font-size: 1.2rem;
 }
-footer{
+.task7-3-F{
 		display:flex;
 		justify-content: space-around;
 		align-items: center;
@@ -85,7 +97,8 @@ footer{
 		font-weight: 100;
 		background: rgba(153,223,240,0.6);
 }
-footer a{
+.color1,
+.color2{
 		 padding: 1rem 1rem;
 		 border-radius: 0.5rem;
 		 color: white;

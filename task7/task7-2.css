@@ -36,7 +36,7 @@ header{
 	  width: 1.5rem;
 	  border: 1px solid white;
 }
-.icon-2{
+.icon-X{
 		margin-right: 1rem;
 }
 .container-fluid{		
@@ -91,7 +91,7 @@ header{
 	 justify-content: center;
 	 align-items: center;
 }
-.name{
+.person{
 	  flex-grow:20;
 	  background: #f5c97b;
 	  font-size: 1.8rem;
@@ -154,7 +154,7 @@ footer{
 		font-weight: 100;
 		background: #29bde0;
 }
-footer a{
+.vote-a{
 	     width: 60%;
 		 padding: 1rem 1rem;
 		 color: white;
