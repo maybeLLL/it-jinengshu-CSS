@@ -64,9 +64,9 @@ header{
 		   color: white;
 }
 a.moregame{
+		   padding: 0;
 		   padding-top: 1.5rem;
 		   padding-bottom: 1rem;
-		   padding-left: 0.5rem;
 		   background: white;
 }
 .number{
