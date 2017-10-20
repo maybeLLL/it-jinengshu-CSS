@@ -354,7 +354,7 @@ li{
 					color: #999;
 }
 li:hover{
-		  border-bottom: 0.5px solid #29b078;
+		  border-bottom: 1px solid #29b078;
 }
 .footer-green{
 				margin: 0;
