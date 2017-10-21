@@ -1,10 +1,9 @@
 body{
 	  margin: 0;
 	  padding: 0;
-	  min-width: 320px;
+	  min-width: 363px;
 	  font-size: 10px;
 	  margin-top: 9.5rem;
-	  margin-bottom: 10rem;
 	  background: #fafafa;
 }
 header{
@@ -75,6 +74,7 @@ nav a:link{
 .container-fluid{
 			   margin: 0;
 			   padding: 0 5%;
+			   background: #fafafa;
 }
 .advantage{
 			display: flex;
@@ -433,6 +433,7 @@ li:hover{
 .hezuo{	
 		margin: 0;
 		margin-bottom: 7.4rem;
+		font-size: 1.2rem;
 }
 .hezuo-content{
 				padding: 0;
@@ -453,15 +454,15 @@ li:hover{
 		flex-flow: column wrap;
 		justify-content: space-around;
 		align-items: center;
-		padding: 0;
+		padding: 0 1rem;
 		border: 2px solid #ededed;}
 }
-.zhiyelink a{
-				color: #000;
+.after,
+.before{
+		color: #000;
 }
 .zhiyelink a:hover,
-.zhiyelink a:active,
-.zhiyelink a:link{
+.zhiyelink a:active{
 					text-decoration: none;
 					color: #29b078;
 }
@@ -480,6 +481,7 @@ li:hover{
 				border-bottom: 4px solid transparent;
 				border-left: 8px solid #000;
 				margin-left: -8px;
+				margin-right: 2px;
 }
 .nav{
 	  padding: 0;
@@ -547,4 +549,94 @@ li:hover{
 .tudou img{
 			margin-right: 2rem;
 }
-		
+.fangxiang{
+			padding:0;
+			padding-top: 3rem;
+			font-weight: 300;
+}
+.fangxiang-link,
+.fangxiang-link:visited{
+						margin: 0 1rem;
+						color: #000;
+}
+.fangxiang-link:hover,
+.fangxiang-link:active{
+						text-decoration: none;
+						color: #fff;
+						background: #29b078;
+}
+.fangxiang-link:link{
+						text-decoration: none;
+}
+.qianduan{
+			padding: 6rem 0 3rem 0;
+			border-bottom: 1px solid #dedede;
+			font-weight: 700;
+}
+.webqianduan{
+				padding: 3rem 0;
+}
+.gangwei{
+		  padding: 0;
+		  margin-top: 3rem;
+		  border: 2px solid #ededed;
+		  background: white;
+}
+.touxiang{
+			display: flex;
+			flex-flow: row;
+			align-items: center;
+			padding: 0.5rem;
+			border-bottom: 2px solid #ededed;
+}
+.qianduan-content{
+					padding: 0 1rem;
+					font-weight: 700;
+}
+.touxiang-pic{
+				padding-right: 1rem;
+}
+.line{	
+		padding: 0.5rem;
+		border-bottom: 1px solid #ededed;
+}
+.line1-1{
+			border-right: 1px solid #ededed;
+}
+.xing{
+		margin-left: 0.5rem;
+}
+.color{
+		color: #ff5c00;
+}
+.daiyu{
+		 display: flex;
+		 align-items: center;
+		 padding: 0;
+}
+.line2-1{
+		  padding: 0 0.5rem;
+}
+.line2-2{
+		 border-left: 1px solid #ededed;
+		 padding: 0;
+}
+.line2-2-1,
+.line2-2-2,
+.line2-2-3{
+			padding: 0.5rem 0;
+}
+.line2-2-1,
+.line2-2-2{
+			border-bottom: 1px solid #ededed;
+}
+.line3{
+		padding: 0.5rem;
+		border-top: 1px solid #ededed;
+		font-weight: 700;
+}
+.line4{
+		padding: 0.5rem;
+		border-top: 1px solid #ededed;
+}
+
