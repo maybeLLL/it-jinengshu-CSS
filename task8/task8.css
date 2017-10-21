@@ -401,7 +401,7 @@ li:hover{
 }
 .jns-link a:hover,
 .jns-link a:active,
-.jns-link a:link,
+
 .ourwebs a:hover,
 .ourwebs a:active,
 .ourwebs a:link{
@@ -638,5 +638,21 @@ li:hover{
 .line4{
 		padding: 0.5rem;
 		border-top: 1px solid #ededed;
+}
+.hover{
+		display: none;
+}
+.gangwei:hover .hover{
+						display: flex;
+						align-items: center;
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						background: rgba(56,56,56,0.5);
+						color: white;
+}
+.hover p{
+		  padding: 0 1rem;
 }
 
