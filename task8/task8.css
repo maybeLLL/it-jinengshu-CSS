@@ -72,7 +72,7 @@ nav a:link{
 .flowpicture{
 			  width: 100%;
 }
-.main-content{
+.container-fluid{
 			   margin: 0;
 			   padding: 0 5%;
 }
@@ -430,3 +430,121 @@ li:hover{
 			padding: 2rem 0 0 0;
 			font-size: 1rem;
 }
+.hezuo{	
+		margin: 0;
+		margin-bottom: 7.4rem;
+}
+.hezuo-content{
+				padding: 0;
+}
+.hezuoqiye{
+			padding: 3rem 0;
+			font-size: 1.4rem;
+			font-weight: 900;
+			border: 2px solid #ededed;
+			border-bottom: 0;
+}
+.zhiyelink{
+			margin: 0;
+			padding: 3rem 0;
+}
+.hezuo-link{
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: space-around;
+		align-items: center;
+		padding: 0;
+		border: 2px solid #ededed;}
+}
+.zhiyelink a{
+				color: #000;
+}
+.zhiyelink a:hover,
+.zhiyelink a:active,
+.zhiyelink a:link{
+					text-decoration: none;
+					color: #29b078;
+}
+.after::after{
+				display: inline-block;
+				content:"";
+				border-top: 4px solid #fff;
+				border-bottom: 4px solid #fff;
+				border-left: 8px solid #fff;
+				z-index: 1;
+}
+.before::before{
+				display: inline-block;
+				content:"";
+				border-top: 4px solid transparent;
+				border-bottom: 4px solid transparent;
+				border-left: 8px solid #000;
+				margin-left: -8px;
+}
+.nav{
+	  padding: 0;
+	  margin-bottom: 2rem;
+}
+.qiye-content{
+				display: flex;
+				align-items: center;
+				padding: 3rem 0;
+				font-size: 1.2rem;
+				padding: 2rem 0;
+				color: #29b078;
+}
+.qiye-content:hover,
+.qiye-content:active,
+.qiye-content:link{
+					text-decoration: none;
+					color: #f9a372;
+}
+.qiye-content:hover .circle-orange,
+.qiye-content:active .circle-orange{
+									background: #f9a372;
+}
+.circle-orange{
+		 display: inline-block;
+		 height: 1rem;
+		 width: 1rem;
+		 border: 1px solid #ff7527;
+		 border-radius: 50%;
+		 margin: 0 1rem 0 0;
+		 background: #white;
+}
+@media screen and (max-width: 992px){
+.hezuo-link{
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-around;
+			align-items: center;
+}
+}
+.qiyejieshao{
+			  padding: 0;
+			  border: 2px solid #ededed;
+			  font-size: 1.2rem;
+			  line-height: 2;
+			  color: #999;
+}
+.qiyejieshao-content{
+					 padding: 0;
+}
+.tudou{
+		padding: 2rem;
+		border-bottom: 2px solid #ededed;
+}
+.float{
+		float: left;
+}
+.tudou-content{
+				padding: 2rem;
+}
+.tudou-content p{
+				 text-indent: 2em;
+				 padding: 1rem 0;
+}
+.tudou img{
+			margin-right: 2rem;
+}
+		
