@@ -494,10 +494,10 @@ li:hover{
 				font-size: 1.2rem;
 				padding: 2rem 0;
 				color: #29b078;
+				text-decoration: none;
 }
 .qiye-content:hover,
-.qiye-content:active,
-.qiye-content:link{
+.qiye-content:active{
 					text-decoration: none;
 					color: #f9a372;
 }
