@@ -3,12 +3,11 @@ body{
 	  padding: 0;
 	  min-width: 363px;
 	  font-size: 10px;
-	  margin-top: 9.5rem;
+
 	  background: #fafafa;
 }
 header{
-		position: fixed;
-		top: 0;
+
 		width: 100%;
 		min-width: 320px;
 		color: white;
@@ -42,13 +41,19 @@ header{
 }
 nav{
 	  display: flex;
-	  flex-flow: wrap;
+	  flex-flow: row wrap;
+	  position: relative;
 	  padding-right: 11.5%;
 	  justify-content: flex-end;
 	  height: 6rem;
 	  background: #29b078;
 	  }
-nav a{
+.linkpage{
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: flex-end;
+}
+.linkother{
 	   display: flex;
 	   align-items: center;
 	   padding: 0 1.5rem 0 1.5rem;
@@ -56,17 +61,67 @@ nav a{
 	   color: white;
 	   font-size: 1.5rem;
 }
-nav a:hover,
-nav a:active{
+.linkother:hover,
+.linkother:active{
 			  text-decoration: none;
 			  border-bottom: 1px solid white;
 			  color: white;
 }
-nav a:visited{
+.linkother:visited{
 			 color: white;
 }
-nav a:link{
-			text-decoration: none;
+.linkother:link{
+				text-decoration: none;
+}
+.icon-line{
+			display: none;
+}
+@media screen and (max-width: 992px){
+nav{
+	flex-flow: column;
+	align-items: flex-end;
+	justify-content: center;
+	height: auto;
+	padding: 0;
+}
+.linkpage{
+			display: none;
+}
+.icon-line{
+			 display: flex;
+			 flex-flow: column wrap;
+			 align-items: center;
+			 height: 3rem;
+			 width:	3rem;
+			 padding: 0.65rem 0.5rem;
+			 margin: 1.5rem 5% 1.5rem 0;
+			 border: 0;
+			 border-radius: 3px;
+			 background: #29b078;
+			 outline: none;
+}
+.icon-line:hover{
+					background: white;
+}
+nav:hover  .linkpage{
+					 display: block;
+					 padding: 0 1.5rem 0 1.5rem;
+					 border: 1px solid #29b078;
+				     width: 100%;
+					 color: white;
+					 font-size: 1.5rem;
+}
+.linkother{
+			display: block;
+			margin: 0.5rem 0;
+			text-align: center;
+}
+.line1{
+	  width: 1.5rem;
+	  margin: 0.2rem;
+	  border: 0;
+	  border-top: 1px solid grey;
+}
 }
 .flowpicture{
 			  width: 100%;
@@ -278,8 +333,21 @@ nav a:link{
 			 padding: 0;
 			 margin: 2rem 0;
 }
-@media screen and (max-width: 767px){
+@media screen and (min-width: 768px) and (max-width: 992px){
 .partner-bg{
+			width: 50%;
+			height: 14rem;
+}
+}
+@media screen and (max-width: 768px){
+.partner-bg{
+			width: 100%;
+			height: 16rem;
+}
+}
+@media screen and (min-width: 992px){
+.partner-bg{
+			width: 20%;
 			height: 12rem;
 }
 }
@@ -399,6 +467,15 @@ li:hover{
 			border: 1px solid #29b078;
 			color: white;
 }
+.jns-link a{
+			 padding: 0;
+			 padding-right: 1rem;
+			 margin: 1rem 1rem 1rem 0;
+			 border-right: 1px solid white;
+}
+.a-end{
+		border-right: 1px solid #29b078 !important;
+}
 .jns-link a:hover,
 .jns-link a:active,
 
@@ -517,7 +594,7 @@ li:hover{
 @media screen and (max-width: 992px){
 .hezuo-link{
 			display: flex;
-			flex-flow: row wrap;
+			flex-flow: column wrap;
 			justify-content: space-around;
 			align-items: center;
 }
