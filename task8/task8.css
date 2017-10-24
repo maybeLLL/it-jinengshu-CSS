@@ -717,17 +717,23 @@ li:hover{
 		border-top: 1px solid #ededed;
 }
 .hover{
-		display: none;
+		display: flex;
+		align-items: center;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		background: rgba(56,56,56,0.5);
+		color: white;
+		opacity: 0;
+		transform: scale(0);
+		transition: opacity 3s linear,transform 1s linear;
 }
 .gangwei:hover .hover{
-						display: flex;
-						align-items: center;
-						position: absolute;
-						top: 0;
-						bottom: 0;
-						left: 0;
-						background: rgba(56,56,56,0.5);
-						color: white;
+						opacity: 1;
+						transform: scale(1);
+						transition: opacity 1.3s linear,transform 1s linear;
+	
 }
 .hover p{
 		  padding: 0 1rem;
