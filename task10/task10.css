@@ -17,10 +17,12 @@ body{
 }
 .hover-blue:hover{
 					background: #1d7ad9;
+					color: white;
 					text-decoration: none;
 }
 .btn{
 		margin-left: 2rem;
+		background: white;
 }
 .head-a{
 		display: inline-block;
