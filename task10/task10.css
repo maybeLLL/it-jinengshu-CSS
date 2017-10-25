@@ -54,19 +54,20 @@ body{
 		 border-radius: 50%;
 		 background: #ccc;
 		 color: #fff;
+		 z-index: 3;
 }
 .line-text{
 			padding-top: 1.5rem;
 			color: #ccc;
 }
-.line:hover .line-circle{
-						  background: #ff7f02
-}
-.line:hover .circle{
-					background: #ff7f02;
-}
-.line:hover .line-text{
-						color: #ff7f02;
+.process-line{
+				position: absolute;
+				top: 1rem;
+				bottom: 0;
+				width: 25%;
+				height: 0.5rem;
+				background: #ff7f02;
+				z-index: 2;
 }
 .process{
 			padding: 1rem 5%;
