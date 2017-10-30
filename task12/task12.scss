@@ -1,0 +1,186 @@
+$color: #5fc0cd;
+$hover-color: #fff;
+$line: inline-block;
+$line-border: 1px solid #e1e5e7;
+@mixin a{
+	text-decoration: none;
+	color: #000;
+}
+@mixin center($dir,$space,$center){
+	display: flex;
+	flex-flow: $dir nowrap;
+	justify-content: $space;
+	align-items: $center;
+}
+@mixin button($width,){
+	padding: 0.6rem 1rem;
+	border-radius: 5px;
+	width: $width;
+	color: $color;
+	border: 1px solid $color;
+	background: $hover-color;
+	outline: none;
+}
+@mixin hover{
+	text-decoration: none;
+	color: $hover-color;
+	background: $color;
+}
+@mixin fix($top-bottom,$height,$background){
+	position: fixed;
+	#{$top-bottom}: 0;
+	height: 4rem;
+	width: 100%;
+	background: $background;
+}
+@mixin bg-position($top,$left){
+	background: url(background/css_sprites.png) no-repeat $top $left;
+}
+@mixin icon($height,$width){
+	height: $height;
+	width: $width;
+}
+html{
+	font-size: 10px;
+}
+body{
+	margin: 4rem 0;
+}
+header{
+	@include fix(top,4rem,$color);
+	@include center(row,center,center);
+	z-index:2;
+	color: $hover-color;
+	button{
+		@include button(auto);
+		&:hover{
+			color: $hover-color;
+			background: #55a8b3;
+		}
+	}
+}
+footer{
+	@include fix(bottom,4rem,#f8fafb);
+	@include center(row,center,center);
+	button{
+		@include button(8rem);
+		margin-left: 1rem;
+	
+		&:hover{
+			color: $hover-color;
+			background: $color;
+		}
+	}
+}
+.background{
+	@include center(row,flex-start,center);
+	padding: 3rem 0;
+	background: url(background/background1.png) no-repeat;
+	background-size: cover;
+	.photo,
+	.infor{
+		display: $line;
+		padding: 0 1rem;
+		.icon{
+			display: $line;
+			@include icon(1.3rem,1.1rem);
+			@include bg-position(-1rem,-7rem);
+			vertical-align: middle;
+		}
+		img{
+			@include icon(10rem,10rem)
+		}
+	}
+}
+.line{
+	border-bottom: $line-border;
+	padding: 1rem 0;
+	line-height: 2;
+	.icon{
+		@include bg-position(-1rem,-10.3rem);
+		@include icon(1.3rem,1.3rem);
+		margin-right:0.5rem;
+	}
+}
+.icon-top{
+	display: $line;
+	@include bg-position(-1rem,-1rem);
+	@include icon(1rem,1rem);
+}
+.icon-bottom{
+	display: $line;
+	@include bg-position(-1rem,-4rem);
+	@include icon(1rem,0.9rem);
+}
+.border{
+	height: 1.5rem;
+	padding-left: 2rem;
+	border-right: 3px solid $color;
+}
+.content1{
+	padding-left:2rem;
+}
+.content{
+	@include center(row,flex-start,center);
+	padding-left: 4rem;
+}
+.col{
+	padding-right: 1rem;
+	border-right: $line-border;
+}
+.right{
+	padding-right: 1rem;
+}
+.col-after{
+	width: 70%;
+	margin-left: 2rem;
+}
+.line-content{
+	@include center(column,space-around,flex-start);
+	padding-left: 4rem;
+}
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+a{
+	@include a;
+	&:hover{
+		@include a;
+	}
+	&:visited{
+		@include a;
+	}
+	&:active{
+		@include a;
+	}
+}
+.drop-title{
+	position: relative;
+	display: $line;
+	width: 33.33333%;
+	text-align: center;
+	line-height: 3rem;
+	box-sizing: border-box;
+	border-bottom: $line-border;
+	li{
+		border-bottom: $line-border;
+	}
+}
+.border-right{
+	border-right: $line-border;
+}
+.drop-content{
+	display: none;
+}
+.drop-title:hover .drop-content{
+	display: block;
+	position: absolute;
+	top: 3rem;
+	width: 100%;
+	box-sizing: border-box;
+	border: $line-border;
+	z-index: 1;
+	background: $hover-color;
+}

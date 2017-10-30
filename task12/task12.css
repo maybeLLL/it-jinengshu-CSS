@@ -1,0 +1,178 @@
+html {
+  font-size: 10px; }
+
+body {
+  margin: 4rem 0; }
+
+header {
+  position: fixed;
+  top: 0;
+  height: 4rem;
+  width: 100%;
+  background: #5fc0cd;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  color: #fff; }
+  header button {
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    width: auto;
+    color: #5fc0cd;
+    border: 1px solid #5fc0cd;
+    background: #fff;
+    outline: none; }
+    header button:hover {
+      color: #fff;
+      background: #55a8b3; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 4rem;
+  width: 100%;
+  background: #f8fafb;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center; }
+  footer button {
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    width: 8rem;
+    color: #5fc0cd;
+    border: 1px solid #5fc0cd;
+    background: #fff;
+    outline: none;
+    margin-left: 1rem; }
+    footer button:hover {
+      color: #fff;
+      background: #5fc0cd; }
+
+.background {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3rem 0;
+  background: url(background/background1.png) no-repeat;
+  background-size: cover; }
+  .background .photo,
+  .background .infor {
+    display: inline-block;
+    padding: 0 1rem; }
+    .background .photo .icon,
+    .background .infor .icon {
+      display: inline-block;
+      height: 1.3rem;
+      width: 1.1rem;
+      background: url(background/css_sprites.png) no-repeat -1rem -7rem;
+      vertical-align: middle; }
+    .background .photo img,
+    .background .infor img {
+      height: 10rem;
+      width: 10rem; }
+
+.line {
+  border-bottom: 1px solid #e1e5e7;
+  padding: 1rem 0;
+  line-height: 2; }
+  .line .icon {
+    background: url(background/css_sprites.png) no-repeat -1rem -10.3rem;
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-right: 0.5rem; }
+
+.icon-top {
+  display: inline-block;
+  background: url(background/css_sprites.png) no-repeat -1rem -1rem;
+  height: 1rem;
+  width: 1rem; }
+
+.icon-bottom {
+  display: inline-block;
+  background: url(background/css_sprites.png) no-repeat -1rem -4rem;
+  height: 1rem;
+  width: 0.9rem; }
+
+.border {
+  height: 1.5rem;
+  padding-left: 2rem;
+  border-right: 3px solid #5fc0cd; }
+
+.content1 {
+  padding-left: 2rem; }
+
+.content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 4rem; }
+
+.col {
+  padding-right: 1rem;
+  border-right: 1px solid #e1e5e7; }
+
+.right {
+  padding-right: 1rem; }
+
+.col-after {
+  width: 70%;
+  margin-left: 2rem; }
+
+.line-content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-left: 4rem; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+  a:hover {
+    text-decoration: none;
+    color: #000; }
+  a:visited {
+    text-decoration: none;
+    color: #000; }
+  a:active {
+    text-decoration: none;
+    color: #000; }
+
+.drop-title {
+  position: relative;
+  display: inline-block;
+  width: 33.33333%;
+  text-align: center;
+  line-height: 3rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e1e5e7; }
+  .drop-title li {
+    border-bottom: 1px solid #e1e5e7; }
+
+.border-right {
+  border-right: 1px solid #e1e5e7; }
+
+.drop-content {
+  display: none; }
+
+.drop-title:hover .drop-content {
+  display: block;
+  position: absolute;
+  top: 3rem;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e1e5e7;
+  z-index: 1;
+  background: #fff; }
+
+/*# sourceMappingURL=task12.css.map */
