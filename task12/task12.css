@@ -81,7 +81,7 @@ footer {
   footer button {
     padding: 0.6rem 1rem;
     border-radius: 5px;
-    width: 8rem;
+    width: 30%;
     color: #5fc0cd;
     border: 1px solid #5fc0cd;
     background: #fff;
@@ -178,7 +178,7 @@ footer {
   color: grey; }
 
 .col-after {
-  width: 70%;
+  width: 60%;
   margin-left: 2rem; }
 
 .mid-content {

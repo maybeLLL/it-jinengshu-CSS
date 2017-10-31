@@ -130,7 +130,7 @@ footer{
 	@include center(row,center,center);
 	font-size: $font;
 	button{
-		@include button(8rem);
+		@include button(30%);
 		margin-left: 1rem;
 		&:hover,
 		&:focus{
@@ -224,7 +224,7 @@ footer{
 }
 //页面一第二列文字设置
 .col-after{
-	width: 70%;
+	width: 60%;
 	margin-left: 2rem;
 }
 //页面二content样式
