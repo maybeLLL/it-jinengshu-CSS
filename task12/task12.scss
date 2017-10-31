@@ -1,31 +1,32 @@
-$color: #5fc0cd;
-$hover-color: #fff;
-$line: inline-block;
-$line-border: 1px solid #e1e5e7;
+@charset "utf-8";
+$color: #5fc0cd;//页面header等的色彩
+$hover-color: #fff;//白色
+$line: inline-block;//需要使用inline-block
+$line-border: 1px solid #e1e5e7;//border相关
+$font: 1.4rem;//内容字体大小
+//链接元素的设置
 @mixin a{
 	text-decoration: none;
 	color: #000;
 }
+//使用flex居中或其他样式
 @mixin center($dir,$space,$center){
 	display: flex;
 	flex-flow: $dir nowrap;
 	justify-content: $space;
 	align-items: $center;
 }
-@mixin button($width,){
-	padding: 0.6rem 1rem;
-	border-radius: 5px;
-	width: $width;
-	color: $color;
-	border: 1px solid $color;
-	background: $hover-color;
-	outline: none;
+//使用position
+@mixin position($dir,$pos-width){
+	position: absolute;
+	#{$dir}: $pos-width;
 }
-@mixin hover{
-	text-decoration: none;
-	color: $hover-color;
-	background: $color;
+//使用position时的居中
+@mixin position-center{
+	top: 50%;
+	transform: translateY(-50%);
 }
+//使用position:fixed;固定
 @mixin fix($top-bottom,$height,$background){
 	position: fixed;
 	#{$top-bottom}: 0;
@@ -33,9 +34,33 @@ $line-border: 1px solid #e1e5e7;
 	width: 100%;
 	background: $background;
 }
+//button的样式
+@mixin button($width,){
+	padding: 0.6rem 1rem;
+	border-radius: 5px;
+	width: $width;
+	color: $color;
+	border: 1px solid $color;
+	background: $hover-color;
+	cursor: pointer;
+	outline: none;
+}
+//hover时的背景色和文字色
+@mixin hover{
+	text-decoration: none;
+	color: $hover-color;
+	background: $color;
+}
+//背景设置相关，主要用于icon的背景
 @mixin bg-position($top,$left){
 	background: url(background/css_sprites.png) no-repeat $top $left;
 }
+//空心箭头样式
+@mixin arc($border-width,$border-dir,$border-width,$border-color){
+	border: $border-width solid transparent;
+	border-#{$border-dir}: $border-width solid $border-color;
+}
+//icon的高宽，适配背景大小
 @mixin icon($height,$width){
 	height: $height;
 	width: $width;
@@ -46,37 +71,95 @@ html{
 body{
 	margin: 4rem 0;
 }
+//链接元素样式
+a{
+	@include a;
+	&:hover{
+		@include a;
+	}
+	&:visited{
+		@include a;
+	}
+	&:active{
+		@include a;
+	}
+}
+//头部页面相关
 header{
 	@include fix(top,4rem,$color);
 	@include center(row,center,center);
+	font-size: $font;
 	z-index:2;
 	color: $hover-color;
+	//头部页面的按钮效果
 	button{
 		@include button(auto);
-		&:hover{
+		font-weight: 900;
+		&:hover,
+		&:focus{
 			color: $hover-color;
 			background: #55a8b3;
 		}
 	}
+	a{
+		@include position(right,1rem);
+		@include position-center;
+	}
+	//头部页面的箭头效果
+	.arc{
+		@include position(left,1rem);
+		@include arc(1rem,right,1rem,#fff);
+		height: 0;
+		width: 0;
+	}
+	.arc::after{
+		float: left;
+		display: $line;
+		content:"";
+		@include arc(1rem,right,1rem,$color);
+		margin-top: -1rem;
+		margin-left: -0.9rem;
+	}
 }
+.margin-left{
+	margin-left: -1.5rem;
+}
+
 footer{
 	@include fix(bottom,4rem,#f8fafb);
 	@include center(row,center,center);
+	font-size: $font;
 	button{
 		@include button(8rem);
 		margin-left: 1rem;
-	
-		&:hover{
+		&:hover,
+		&:focus{
 			color: $hover-color;
 			background: $color;
 		}
 	}
+	img{
+		display: block;
+		margin: 0 auto;
+	}
 }
+.a-left{
+	@include position(left,25%);
+	span{
+		color: $color;
+	}
+}
+.a-right{
+	@include position(right,25%);
+}
+//页面一的大背景部分
 .background{
 	@include center(row,flex-start,center);
 	padding: 3rem 0;
 	background: url(background/background1.png) no-repeat;
 	background-size: cover;
+	font-size: $font;
+	color: #fff;
 	.photo,
 	.infor{
 		display: $line;
@@ -92,16 +175,20 @@ footer{
 		}
 	}
 }
+//列表内容部分的样式
 .line{
+	position: relative;
 	border-bottom: $line-border;
 	padding: 1rem 0;
 	line-height: 2;
+	font-size: $font;
 	.icon{
 		@include bg-position(-1rem,-10.3rem);
 		@include icon(1.3rem,1.3rem);
 		margin-right:0.5rem;
 	}
 }
+//页面二的icon
 .icon-top{
 	display: $line;
 	@include bg-position(-1rem,-1rem);
@@ -112,6 +199,7 @@ footer{
 	@include bg-position(-1rem,-4rem);
 	@include icon(1rem,0.9rem);
 }
+//页面一的第一个Line内容
 .border{
 	height: 1.5rem;
 	padding-left: 2rem;
@@ -120,41 +208,68 @@ footer{
 .content1{
 	padding-left:2rem;
 }
+//页面一line的正常内容
 .content{
 	@include center(row,flex-start,center);
 	padding-left: 4rem;
+	.price{
+		color: red;
+	}
 }
+//页面一第一列文字的设置
 .col{
 	padding-right: 1rem;
 	border-right: $line-border;
+	color: grey;
 }
-.right{
-	padding-right: 1rem;
-}
+//页面一第二列文字设置
 .col-after{
 	width: 70%;
 	margin-left: 2rem;
 }
+//页面二content样式
+.mid-content{
+	padding-left: 1.3rem;
+	color: #000;
+}
+.right{
+	padding-right: 1rem;
+}
 .line-content{
 	@include center(column,space-around,flex-start);
-	padding-left: 4rem;
+	padding-left: 2rem;
+	color: grey;
+	.price{
+	@include position(right,6rem);
+	@include position-center;
+	color: red;
+	}
+	//页面二Line中的箭头
+	.arc{
+		@include position(right,1rem);
+		@include arc(1.2rem,left,1.2rem,$color);
+		height: 0;
+		width: 0;
+	}
+	.arc::after{
+		float: right;
+		display: $line;
+		content:"";
+		@include arc(1.2rem,left,1.2rem,#fff);
+		margin-top: -1.2rem;
+		margin-right: -1rem;
+	}
 }
+//三列内容的下拉菜单
 ul{
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-a{
-	@include a;
-	&:hover{
-		@include a;
-	}
-	&:visited{
-		@include a;
-	}
-	&:active{
-		@include a;
-	}
+.drop{
+	font-size: $font;
+	background: white;
+	color: grey;
 }
 .drop-title{
 	position: relative;
@@ -176,11 +291,10 @@ a{
 }
 .drop-title:hover .drop-content{
 	display: block;
-	position: absolute;
-	top: 3rem;
+	@include position(top,3rem);
 	width: 100%;
 	box-sizing: border-box;
 	border: $line-border;
-	z-index: 1;
 	background: $hover-color;
+	z-index: 1;
 }

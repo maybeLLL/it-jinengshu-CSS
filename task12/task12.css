@@ -4,6 +4,19 @@ html {
 body {
   margin: 4rem 0; }
 
+a {
+  text-decoration: none;
+  color: #000; }
+  a:hover {
+    text-decoration: none;
+    color: #000; }
+  a:visited {
+    text-decoration: none;
+    color: #000; }
+  a:active {
+    text-decoration: none;
+    color: #000; }
+
 header {
   position: fixed;
   top: 0;
@@ -14,6 +27,7 @@ header {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  font-size: 1.4rem;
   z-index: 2;
   color: #fff; }
   header button {
@@ -23,10 +37,35 @@ header {
     color: #5fc0cd;
     border: 1px solid #5fc0cd;
     background: #fff;
-    outline: none; }
-    header button:hover {
+    cursor: pointer;
+    outline: none;
+    font-weight: 900; }
+    header button:hover, header button:focus {
       color: #fff;
       background: #55a8b3; }
+  header a {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%); }
+  header .arc {
+    position: absolute;
+    left: 1rem;
+    border: 1rem solid transparent;
+    border-right: 1rem solid #fff;
+    height: 0;
+    width: 0; }
+  header .arc::after {
+    float: left;
+    display: inline-block;
+    content: "";
+    border: 1rem solid transparent;
+    border-right: 1rem solid #5fc0cd;
+    margin-top: -1rem;
+    margin-left: -0.9rem; }
+
+.margin-left {
+  margin-left: -1.5rem; }
 
 footer {
   position: fixed;
@@ -37,7 +76,8 @@ footer {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  font-size: 1.4rem; }
   footer button {
     padding: 0.6rem 1rem;
     border-radius: 5px;
@@ -45,11 +85,25 @@ footer {
     color: #5fc0cd;
     border: 1px solid #5fc0cd;
     background: #fff;
+    cursor: pointer;
     outline: none;
     margin-left: 1rem; }
-    footer button:hover {
+    footer button:hover, footer button:focus {
       color: #fff;
       background: #5fc0cd; }
+  footer img {
+    display: block;
+    margin: 0 auto; }
+
+.a-left {
+  position: absolute;
+  left: 25%; }
+  .a-left span {
+    color: #5fc0cd; }
+
+.a-right {
+  position: absolute;
+  right: 25%; }
 
 .background {
   display: flex;
@@ -58,7 +112,9 @@ footer {
   align-items: center;
   padding: 3rem 0;
   background: url(background/background1.png) no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  font-size: 1.4rem;
+  color: #fff; }
   .background .photo,
   .background .infor {
     display: inline-block;
@@ -76,9 +132,11 @@ footer {
       width: 10rem; }
 
 .line {
+  position: relative;
   border-bottom: 1px solid #e1e5e7;
   padding: 1rem 0;
-  line-height: 2; }
+  line-height: 2;
+  font-size: 1.4rem; }
   .line .icon {
     background: url(background/css_sprites.png) no-repeat -1rem -10.3rem;
     height: 1.3rem;
@@ -111,42 +169,63 @@ footer {
   justify-content: flex-start;
   align-items: center;
   padding-left: 4rem; }
+  .content .price {
+    color: red; }
 
 .col {
   padding-right: 1rem;
-  border-right: 1px solid #e1e5e7; }
-
-.right {
-  padding-right: 1rem; }
+  border-right: 1px solid #e1e5e7;
+  color: grey; }
 
 .col-after {
   width: 70%;
   margin-left: 2rem; }
+
+.mid-content {
+  padding-left: 1.3rem;
+  color: #000; }
+
+.right {
+  padding-right: 1rem; }
 
 .line-content {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: flex-start;
-  padding-left: 4rem; }
+  padding-left: 2rem;
+  color: grey; }
+  .line-content .price {
+    position: absolute;
+    right: 6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: red; }
+  .line-content .arc {
+    position: absolute;
+    right: 1rem;
+    border: 1.2rem solid transparent;
+    border-left: 1.2rem solid #5fc0cd;
+    height: 0;
+    width: 0; }
+  .line-content .arc::after {
+    float: right;
+    display: inline-block;
+    content: "";
+    border: 1.2rem solid transparent;
+    border-left: 1.2rem solid #fff;
+    margin-top: -1.2rem;
+    margin-right: -1rem; }
 
 ul {
   list-style: none;
   margin: 0;
   padding: 0; }
 
-a {
-  text-decoration: none;
-  color: #000; }
-  a:hover {
-    text-decoration: none;
-    color: #000; }
-  a:visited {
-    text-decoration: none;
-    color: #000; }
-  a:active {
-    text-decoration: none;
-    color: #000; }
+.drop {
+  font-size: 1.4rem;
+  background: white;
+  color: grey; }
 
 .drop-title {
   position: relative;
@@ -172,7 +251,7 @@ a {
   width: 100%;
   box-sizing: border-box;
   border: 1px solid #e1e5e7;
-  z-index: 1;
-  background: #fff; }
+  background: #fff;
+  z-index: 1; }
 
 /*# sourceMappingURL=task12.css.map */
