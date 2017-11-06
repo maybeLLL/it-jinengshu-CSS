@@ -101,7 +101,7 @@ header{
 			background: #55a8b3;
 		}
 	}
-	a{
+	.loc{
 		@include position(right,1rem);
 		@include position-center;
 	}
@@ -123,6 +123,20 @@ header{
 }
 .margin-left{
 	margin-left: -1.5rem;
+	@include button(auto);
+		font-weight: 900;
+		&:hover,
+		&:focus{
+			color: $hover-color;
+			background: #55a8b3;
+		}
+		&:visited{
+			color: $color;
+		}
+}
+.no-margin{
+	@extend .margin-left;
+	margin-left: 0;
 }
 
 footer{

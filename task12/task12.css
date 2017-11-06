@@ -43,7 +43,7 @@ header {
     header button:hover, header button:focus {
       color: #fff;
       background: #55a8b3; }
-  header a {
+  header .loc {
     position: absolute;
     right: 1rem;
     top: 50%;
@@ -64,8 +64,25 @@ header {
     margin-top: -1rem;
     margin-left: -0.9rem; }
 
-.margin-left {
-  margin-left: -1.5rem; }
+.margin-left, .no-margin {
+  margin-left: -1.5rem;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  width: auto;
+  color: #5fc0cd;
+  border: 1px solid #5fc0cd;
+  background: #fff;
+  cursor: pointer;
+  outline: none;
+  font-weight: 900; }
+  .margin-left:hover, .no-margin:hover, .margin-left:focus, .no-margin:focus {
+    color: #fff;
+    background: #55a8b3; }
+  .margin-left:visited, .no-margin:visited {
+    color: #5fc0cd; }
+
+.no-margin {
+  margin-left: 0; }
 
 footer {
   position: fixed;
