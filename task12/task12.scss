@@ -92,15 +92,23 @@ header{
 	z-index:2;
 	color: $hover-color;
 	//头部页面的按钮效果
-	button{
-		@include button(auto);
+	.margin-left{
+	margin-left: -1.5rem;
+	@include button(auto);
 		font-weight: 900;
 		&:hover,
 		&:focus{
 			color: $hover-color;
 			background: #55a8b3;
 		}
-	}
+		&:visited{
+			color: $color;
+		}
+}
+.no-margin{
+	@extend .margin-left;
+	margin-left: 0;
+}
 	.loc{
 		@include position(right,1rem);
 		@include position-center;
@@ -121,24 +129,6 @@ header{
 		margin-left: -0.9rem;
 	}
 }
-.margin-left{
-	margin-left: -1.5rem;
-	@include button(auto);
-		font-weight: 900;
-		&:hover,
-		&:focus{
-			color: $hover-color;
-			background: #55a8b3;
-		}
-		&:visited{
-			color: $color;
-		}
-}
-.no-margin{
-	@extend .margin-left;
-	margin-left: 0;
-}
-
 footer{
 	@include fix(bottom,4rem,#f8fafb);
 	@include center(row,center,center);

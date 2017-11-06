@@ -30,7 +30,8 @@ header {
   font-size: 1.4rem;
   z-index: 2;
   color: #fff; }
-  header button {
+  header .margin-left, header .no-margin {
+    margin-left: -1.5rem;
     padding: 0.6rem 1rem;
     border-radius: 5px;
     width: auto;
@@ -40,9 +41,13 @@ header {
     cursor: pointer;
     outline: none;
     font-weight: 900; }
-    header button:hover, header button:focus {
+    header .margin-left:hover, header .no-margin:hover, header .margin-left:focus, header .no-margin:focus {
       color: #fff;
       background: #55a8b3; }
+    header .margin-left:visited, header .no-margin:visited {
+      color: #5fc0cd; }
+  header .no-margin {
+    margin-left: 0; }
   header .loc {
     position: absolute;
     right: 1rem;
@@ -63,26 +68,6 @@ header {
     border-right: 1rem solid #5fc0cd;
     margin-top: -1rem;
     margin-left: -0.9rem; }
-
-.margin-left, .no-margin {
-  margin-left: -1.5rem;
-  padding: 0.6rem 1rem;
-  border-radius: 5px;
-  width: auto;
-  color: #5fc0cd;
-  border: 1px solid #5fc0cd;
-  background: #fff;
-  cursor: pointer;
-  outline: none;
-  font-weight: 900; }
-  .margin-left:hover, .no-margin:hover, .margin-left:focus, .no-margin:focus {
-    color: #fff;
-    background: #55a8b3; }
-  .margin-left:visited, .no-margin:visited {
-    color: #5fc0cd; }
-
-.no-margin {
-  margin-left: 0; }
 
 footer {
   position: fixed;
