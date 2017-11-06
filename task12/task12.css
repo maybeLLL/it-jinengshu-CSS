@@ -41,11 +41,12 @@ header {
     cursor: pointer;
     outline: none;
     font-weight: 900; }
+    header .margin-left:visited, header .no-margin:visited {
+      color: #5fc0cd;
+      background: #fff; }
     header .margin-left:hover, header .no-margin:hover, header .margin-left:focus, header .no-margin:focus {
       color: #fff;
       background: #55a8b3; }
-    header .margin-left:visited, header .no-margin:visited {
-      color: #5fc0cd; }
   header .no-margin {
     margin-left: 0; }
   header .loc {

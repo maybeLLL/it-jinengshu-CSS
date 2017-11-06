@@ -93,22 +93,23 @@ header{
 	color: $hover-color;
 	//头部页面的按钮效果
 	.margin-left{
-	margin-left: -1.5rem;
-	@include button(auto);
+		margin-left: -1.5rem;
+		@include button(auto);
 		font-weight: 900;
-		&:hover,
-		&:focus{
-			color: $hover-color;
-			background: #55a8b3;
-		}
-		&:visited{
-			color: $color;
-		}
-}
-.no-margin{
+			&:visited{
+				color: $color;
+				background: $hover-color;
+			}
+			&:hover,
+			&:focus{
+				color: $hover-color;
+				background: #55a8b3;
+			}
+	}
+	.no-margin{
 	@extend .margin-left;
-	margin-left: 0;
-}
+		margin-left: 0;
+	}
 	.loc{
 		@include position(right,1rem);
 		@include position-center;
