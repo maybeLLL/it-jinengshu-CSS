@@ -1,0 +1,20 @@
+.learn-process{
+	@include flex(row,wrap,center,center);
+	padding: 10px $gloab-pd-ver;
+	font-size: 14px;
+}
+.step{
+	@include flex(row,nowrap,space-around,center);
+	padding: 5px 10px;
+	width: $md;
+	.icon{
+		@include flex(row,nowrap,center,center);
+		flex-shrink: 0;
+		height: 30px;
+		width: 30px;
+		color: $color-green;
+		border: 0;
+		background: #fff;
+		box-shadow: 0 0 10px grey;
+	}
+}

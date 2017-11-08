@@ -1,0 +1,25 @@
+.icon{
+	display: inline-block;
+	border-radius: 50%;
+}
+@mixin icon-size($icon-width,$icon-height,
+	$y-margin,$x-margin){
+	width: $icon-width;
+	height: $icon-height;
+	margin: $y-margin $x-margin;
+}
+@mixin icon-border($icon-border-color){
+	border: 1px solid $icon-border-color;
+}
+.icon-xs{
+	@include icon-size(25px,25px,0,5px);
+	@include icon-border(#29b078);
+}
+.icon-xxs{
+	@include icon-size(10px,10px,0,5px);
+	@include icon-border(#f9a372);
+}
+.icon-base{
+	@include icon-size(80px,80px,0,0);
+	@include icon-border(#999);
+}

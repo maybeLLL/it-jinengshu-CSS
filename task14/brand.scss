@@ -1,0 +1,18 @@
+.brand{
+	@include flex(row,nowrap,auto,center);
+	padding: 10px $gloab-pd-ver;
+	a{
+		display: inline-block;
+		margin: 1px 1px;
+		width: $mmd;
+		background: #fff;
+		&:hover{
+			box-shadow: 0 0 10px grey;
+			z-index: 1;
+		}
+		img{
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+}

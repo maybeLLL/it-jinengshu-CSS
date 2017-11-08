@@ -1,0 +1,54 @@
+.goodness{
+	@include flex(row,nowrap,center,stretch);
+	padding: 10px $gloab-pd-ver;
+}
+.show{
+	@include flex(column,nowrap,flex-start,center);
+	width: $md;
+	box-sizing: border-box;
+	padding: 5px 30px;
+}
+.photo{
+	@include flex(row,nowrap,center,flex-end);
+	height: 70px;
+}
+.name{
+	padding: 20px 0;
+}
+.detial{
+	font-size: 12px;
+}
+.show-num{
+	@include flex(column,nowrap,center,center);
+	width: $md;
+	box-sizing: border-box;
+	padding: 5px 30px;
+	span{
+		color: $color-green;
+	}
+}
+.student{
+	@extend .goodness;
+	.show{
+		margin: 0 5px;
+		padding: 10px 20px;
+		background: #fff;
+		box-shadow: 0 0 10px grey;
+		.icon{
+			background: url(img/ms.png) no-repeat center center;
+		}
+		span{
+			word-break: break-all;
+		}
+	}
+}
+.student-icon{
+	padding: 10px;
+	text-align: center;
+	.icon{
+		border: 1px solid $color-green;
+		&:hover{
+			background: $color-green;
+		}
+	}
+}
