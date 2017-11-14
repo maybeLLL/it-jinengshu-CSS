@@ -1,0 +1,91 @@
+@mixin border{
+	border: 1px solid #dedede;
+}
+@mixin border-dir($dir){
+	border-#{$dir}: 1px solid #dedede;
+}
+h4{
+	margin: 0 20px;
+	padding: 10px 0;
+	@include border-dir(bottom);
+	font-size: 14px;
+}
+.job{
+	display: flex;
+	flex-flow: row wrap;
+	padding: 10px 20px;
+}
+.station{
+	position: relative;
+	margin: 10px 0;
+	@include border;
+	font-size: 12px;
+}
+.touxiang{
+	@include flex(row,nowrap,flex-start,center);
+	padding: 5px;
+	@include border-dir(bottom);
+}
+.touxiang-pic{
+	padding: 5px;
+	padding-left: 0;
+}
+.difficulty{
+	@include border-dir(bottom);
+	@include flex(row,nowrap,flex-start,center);
+	.line{
+		width: 50%;
+		padding: 5px;
+		.xing{
+			padding: 0 3px;
+		}
+	}
+	.line:first-child{
+		@include border-dir(right);
+	}
+}
+.daiyu{
+	@include flex(row,nowrap,flex-start,stretch);
+	@include border-dir(bottom);
+	.content{
+		@include flex(row,nowrap,center,center);
+		width: 30%;
+		@include border-dir(right);
+	}
+	.level{
+		@include flex(column,nowrap,flex-start,stretch);
+		width: 70%;
+		span{
+			padding: 5px;
+			@include flex(row,nowrap,space-between,center);
+		}
+		.line-1{
+			@include border-dir(top);
+		}
+	}
+}
+.color{
+	color: red;
+}
+.line3,
+.line4{
+	display: inline-block;
+	width: 100%;
+	padding: 5px;
+}
+.line3{
+	@include border-dir(bottom);
+}
+.hover{
+	display: none;
+}
+.station:hover .hover{
+	@include flex(column,nowrap,center,center);
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	padding: 20px;
+	color: #fff;
+	background: rgba(56,56,56,0.5);
+}

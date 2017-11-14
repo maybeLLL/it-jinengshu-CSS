@@ -23,3 +23,7 @@
 	@include icon-size(80px,80px,0,0);
 	@include icon-border(#999);
 }
+.icon-xxxs{
+	@include icon-size(5px,5px,0,5px);
+	@include icon-border(#f9a372);
+}

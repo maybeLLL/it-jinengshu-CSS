@@ -18,3 +18,18 @@
 		box-shadow: 0 0 10px grey;
 	}
 }
+@media (max-width: 992px){
+	.step{
+		width: $xs;
+	}
+}
+@media (max-width: 768px){
+	.step{
+		width: $xxs;
+	}
+}
+@media (min-width: 992px){
+	.step{
+		width: $md;
+	}
+}

@@ -1,10 +1,10 @@
 .friend-link{
 	@include flex(row,wrap,space-around,center);
 	padding: 10px $gloab-pd-ver;
-	font-size: 14px;
+	font-size: 12px;
+	background: #fff;
 	ul{
 		@include flex(row,nowrap,space-around,center);
-		width: $xs;
 		padding: 10px 0;
 		.icon{
 			border: 1px solid $color-gray;
@@ -22,6 +22,27 @@
 		}
 		li:hover{
 			border-bottom: 1px solid $color-green;
+		}
+	}
+}
+@media (max-width: 992px){
+	.friend-link{
+		ul{
+			width: $xxs;
+		}
+	}
+}
+@media (max-width: 768px){
+	.friend-link{
+		ul{
+			width: $xxs;
+		}
+	}
+}
+@media (min-width: 992px){
+	.friend-link{
+		ul{
+			width: $xs;
 		}
 	}
 }
