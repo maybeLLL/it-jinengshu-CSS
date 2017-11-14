@@ -153,7 +153,7 @@ h3 {
   align-items: stretch;
   padding: 10px 20px; }
 
-.show {
+.goodshow {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
@@ -174,24 +174,23 @@ h3 {
 .detial {
   font-size: 12px; }
 
-.show-num {
+.goodshow-num {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   width: 25%;
-  box-sizing: border-box;
   padding: 5px 30px; }
-  .show-num span {
+  .goodshow-num span {
     color: #29b078; }
 
-.student .show {
+.student .goodshow {
   padding: 10px 20px;
   background: #fff;
   box-shadow: 0 0 10px grey; }
-  .student .show .icon {
+  .student .goodshow .icon {
     background: url(img/ms.png) no-repeat center center; }
-  .student .show span {
+  .student .goodshow span {
     word-break: break-all; }
 
 .student-icon {
@@ -206,16 +205,16 @@ h3 {
   .goodness, .student {
     flex-flow: row wrap; }
 
-  .show {
+  .goodshow {
     width: 50%; } }
 @media (max-width: 768px) {
   .goodness, .student {
     flex-flow: row wrap; }
 
-  .show {
+  .goodshow {
     width: 100%; } }
 @media (min-width: 992px) {
-  .show {
+  .goodshow {
     width: 25%; } }
 .learn-process {
   display: flex;
