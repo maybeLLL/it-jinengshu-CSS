@@ -335,6 +335,8 @@ footer {
     color: #fff;
     padding: 5px 0; }
     footer a:hover {
+      text-decoration: none;
+      color: #fff;
       border-bottom: 1px solid #fff; }
 
 .about-us,
